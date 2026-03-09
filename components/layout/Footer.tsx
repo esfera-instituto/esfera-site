@@ -5,7 +5,7 @@ export const Footer = () => (
   <footer className="mt-16 border-t border-slate-200 bg-white py-10">
     <Container className="grid gap-8 md:grid-cols-3">
       <div>
-        <p className="text-lg font-semibold text-marinho">o ESFERA</p>
+        <p className="text-lg font-semibold text-marinho">ESFERA</p>
         <p className="mt-2 text-sm text-slate-600">
           Aulas particulares e apoio acadêmico com organização pedagógica por nível de ensino e disciplina.
         </p>

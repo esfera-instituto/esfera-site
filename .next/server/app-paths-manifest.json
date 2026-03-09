@@ -1,0 +1,8 @@
+{
+  "/ensino-fundamental/page": "app/ensino-fundamental/page.js",
+  "/page": "app/page.js",
+  "/professores/page": "app/professores/page.js",
+  "/ensino-medio/page": "app/ensino-medio/page.js",
+  "/ensino-fundamental/[disciplina]/page": "app/ensino-fundamental/[disciplina]/page.js",
+  "/ensino-superior/page": "app/ensino-superior/page.js"
+}

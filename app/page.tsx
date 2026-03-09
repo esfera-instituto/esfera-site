@@ -11,31 +11,35 @@ import { getMateriaisDestaque } from "@/data/materiais";
 
 export default function HomePage() {
   const materiaisDestaque = getMateriaisDestaque(6);
-
+const whatsappUrl =
+  "https://wa.me/5511953618314?text=Olá!%20Gostaria%20de%20informações%20sobre%20as%20aulas%20particulares%20do%20ESFERA.";
   return (
     <>
-      <section className="bg-white py-16">
+      <section className="bg-white py-20">
         <Container className="grid items-center gap-8 lg:grid-cols-2">
           <div>
             <h1 className="text-3xl font-semibold text-marinho sm:text-4xl">
-              Aulas particulares com acompanhamento individualizado para Ensino Fundamental, Médio e Superior
-            </h1>
-            <p className="mt-4 text-slate-600">
-              O ESFERA oferece apoio acadêmico com linguagem clara, organização pedagógica por disciplina e flexibilidade para cada aluno ou aluna.
-            </p>
+  Aulas particulares personalizadas para Ensino Fundamental, Médio e Superior
+</h1>
+
+<p className="mt-4 text-slate-600">
+  No ESFERA, cada estudante recebe acompanhamento acadêmico individualizado, com organização pedagógica por disciplina e flexibilidade para atender diferentes necessidades de aprendizagem.
+</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link href="/contato" className="rounded-lg bg-marinho px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
-                Falar com a equipe do ESFERA
-              </Link>
-              <Link href="/ensino-medio" className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">
-                Ver disciplinas
-              </Link>
+              <Link
+  href={whatsappUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-lg bg-marinho px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
+>
+  Falar com a equipe do ESFERA
+</Link>  
             </div>
           </div>
           <div className="relative h-72 overflow-hidden rounded-2xl">
             <Image
               src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
-              alt="Professor ou professora estudando junto com um aluno ou uma aluna"
+              alt="Professor ou professora estudando junto com um(a) estudante"
               fill
               className="object-cover"
               priority
@@ -53,19 +57,45 @@ export default function HomePage() {
       </Section>
 
       <Section title="Como funciona o atendimento" className="bg-white">
-        <Grid>
-          <Card title="1. Solicitação de atendimento" description="A família ou o aluno ou a aluna informa objetivo, disciplina e disponibilidade." />
-          <Card title="2. Análise do caso" description="A equipe organiza o encaminhamento pedagógico considerando nível e necessidade acadêmica." />
-          <Card title="3. Início das aulas" description="As aulas começam com plano de estudos e acompanhamento contínuo." />
-        </Grid>
-      </Section>
+  <Grid>
+    <Card
+      title="1. Solicitação de atendimento"
+      description="A família ou o(a) estudante entra em contato com o ESFERA e informa as necessidades acadêmicas, disciplina e nível de ensino."
+    />
+
+    <Card
+      title="2. Análise do caso"
+      description="A equipe analisa o perfil do estudante, identifica as necessidades pedagógicas e organiza o encaminhamento adequado."
+    />
+
+    <Card
+      title="3. Início das aulas"
+      description="As aulas começam com acompanhamento pedagógico e organização de materiais de apoio conforme o objetivo do estudante."
+    />
+  </Grid>
+</Section>
 
       <Section title="Diferenciais do ESFERA">
         <Grid>
-          <Card title="Materiais de apoio gratuitos" description="Resumos e listas disponíveis nas páginas de cada disciplina." />
-          <Card title="Flexibilidade de atendimento" description="Formatos e horários ajustáveis conforme a rotina acadêmica." />
-          <Card title="Apoio acadêmico em diferentes níveis" description="Atuação do ensino fundamental ao ensino superior." />
-          <Card title="Organização pedagógica dos conteúdos" description="Estruturação por nível de ensino e disciplina para facilitar o estudo." />
+          <Card 
+  title="Materiais de apoio gratuitos"
+  description="O ESFERA disponibiliza resumos teóricos e listas de exercícios organizados por disciplina e nível de ensino."
+/>
+
+<Card 
+  title="Flexibilidade de atendimento"
+  description="As aulas podem ocorrer on-line, no espaço ESFERA ou no local do estudante, conforme a necessidade."
+/>
+
+<Card 
+  title="Atuação em diferentes níveis de ensino"
+  description="O ESFERA oferece acompanhamento para Ensino Fundamental, Médio e Superior, em diferentes disciplinas."
+/>
+
+<Card 
+  title="Organização pedagógica dos conteúdos"
+  description="Os conteúdos são organizados por disciplina e nível de ensino, facilitando o acesso a materiais e exercícios."
+/>
         </Grid>
       </Section>
 
