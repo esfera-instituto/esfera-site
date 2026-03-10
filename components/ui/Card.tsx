@@ -6,6 +6,7 @@ type CardProps = {
   className?: string;
   href?: string;
   title?: string;
+  meta?: string;
   description?: string;
   actionLabel?: string;
 };
@@ -15,6 +16,7 @@ export const Card = ({
   className = "",
   href,
   title,
+  meta,
   description,
   actionLabel,
 }: CardProps) => {
@@ -28,7 +30,11 @@ export const Card = ({
           {title}
         </h3>
       )}
-
+{meta && (
+  <p className="mt-1 text-sm font-medium text-slate-500">
+    {meta}
+  </p>
+)}
       {description && (
         <p className="mt-2 text-sm leading-6 text-slate-600">
           {description}
