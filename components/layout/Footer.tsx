@@ -21,8 +21,19 @@ export const Footer = () => (
       </div>
       <div>
         <p className="font-medium text-marinho">Contato</p>
-        <p className="mt-3 text-sm text-slate-600">WhatsApp: (00) 00000-0000</p>
-        <p className="text-sm text-slate-600">E-mail: contato@esfera.com.br</p>
+
+<p className="mt-3 text-sm text-slate-600">
+  WhatsApp: (11) 95361-8314
+</p>
+
+<p className="text-sm text-slate-600">
+  E-mail: esferaaulasparticulares@gmail.com
+</p>
+
+<p className="text-sm text-slate-600">
+  Alameda Casa Branca, 393<br/>
+  Jardim Paulista – São Paulo – SP
+</p>
       </div>
     </Container>
   </footer>
