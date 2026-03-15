@@ -26,9 +26,10 @@ export interface Material {
   capaUrl?: string;
 }
 
-export interface Professor {
+export type Professor = {
   id: string;
   nome: string;
   area: string;
   descricao: string;
-}
+  imagem: string;
+};
