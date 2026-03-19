@@ -111,12 +111,42 @@ const whatsappUrl =
       </Section>
 
       <Section title="Professores">
-        <Grid>
-          {professores.map((professor) => (
-            <Card key={professor.id} title={professor.nome} meta={professor.area} description={professor.descricao} href="/professores" actionLabel="Ver equipe" />
-          ))}
-        </Grid>
-      </Section>
+  <Grid>
+    {professores.map((professor) => (
+      <article
+        key={professor.id}
+        className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
+      >
+        <img
+          src={professor.imagem}
+          alt={professor.nome}
+          className="h-56 w-full object-cover object-top"
+        />
+
+        <div className="p-5">
+          <h3 className="text-lg font-semibold text-marinho">
+            {professor.nome}
+          </h3>
+
+          <p className="mt-1 text-sm font-medium text-slate-500">
+            {professor.area}
+          </p>
+
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            {professor.descricao}
+          </p>
+
+          <Link
+            href="/professores"
+            className="mt-4 inline-block text-sm font-medium text-marinho"
+          >
+            Conhecer a equipe
+          </Link>
+        </div>
+      </article>
+    ))}
+  </Grid>
+</Section>
 
       <Section title="Materiais de apoio gratuitos" className="bg-white">
         <Grid>
