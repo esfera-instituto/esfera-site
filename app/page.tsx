@@ -110,7 +110,7 @@ const whatsappUrl =
         </div>
       </Section>
 
-      <Section title="Professores">
+      <Section title="Professores(as)">
   <Grid>
     {professores.map((professor) => (
       <article

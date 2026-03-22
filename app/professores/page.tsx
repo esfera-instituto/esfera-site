@@ -5,7 +5,7 @@ import { professores } from "@/data/professores";
 export default function ProfessoresPage() {
   return (
     <Section
-      title="Professores"
+      title="Professores(as)"
       description="Equipe docente com atuação em diferentes disciplinas e níveis de ensino, em alinhamento com a proposta pedagógica do ESFERA."
     >
       <Grid>

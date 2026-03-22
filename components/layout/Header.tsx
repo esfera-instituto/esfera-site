@@ -10,7 +10,7 @@ const links = [
   { href: "/ensino-medio", label: "Ensino Médio" },
   { href: "/ensino-superior", label: "Ensino Superior" },
   { href: "/psicopedagogia", label: "Psicopedagogia" },
-  { href: "/professores", label: "Professores" },
+  { href: "/professores", label: "Professores(as)" },
   { href: "/quem-somos", label: "Quem somos" },
   { href: "/contato", label: "Contato" },
 ];
